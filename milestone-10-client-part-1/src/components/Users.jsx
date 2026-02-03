@@ -25,6 +25,7 @@ const Users = ({ userPromise }) => {
       .then((res) => res.json())
       .then((data) => {
         console.log("after post", data);
+        console.log("test");
         //users ...morde ja data sob gola nichu and add korsi data
         const newUsers = [...users, data];
         setUsers(newUsers);
